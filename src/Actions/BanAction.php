@@ -3,9 +3,9 @@
 namespace JeffersonGoncalves\Filament\Ban\Actions;
 
 use Cog\Contracts\Ban\Bannable;
-use Filament\Actions\Action;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Textarea;
+use Filament\Tables\Actions\Action;
 use Illuminate\Database\Eloquent\Model;
 
 class BanAction extends Action
@@ -23,7 +23,7 @@ class BanAction extends Action
             ->icon('heroicon-o-no-symbol')
             ->color('danger')
             ->requiresConfirmation()
-            ->schema([
+            ->form([
                 Textarea::make('comment')
                     ->label('Comment')
                     ->nullable(),

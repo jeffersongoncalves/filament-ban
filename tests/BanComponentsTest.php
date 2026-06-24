@@ -23,8 +23,8 @@ it('builds the unban bulk action with the default name', function () {
     expect(UnbanBulkAction::make()->getName())->toBe('unban');
 });
 
-it('builds the ban column with the default name', function () {
-    expect(BanColumn::make()->getName())->toBe('banned');
+it('builds the ban column with the given name', function () {
+    expect(BanColumn::make('banned')->getName())->toBe('banned');
 });
 
 it('builds the ban filter with the default name', function () {

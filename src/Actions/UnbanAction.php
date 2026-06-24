@@ -3,7 +3,7 @@
 namespace JeffersonGoncalves\Filament\Ban\Actions;
 
 use Cog\Contracts\Ban\Bannable;
-use Filament\Actions\Action;
+use Filament\Tables\Actions\Action;
 use Illuminate\Database\Eloquent\Model;
 
 class UnbanAction extends Action

@@ -3,7 +3,7 @@
 namespace JeffersonGoncalves\Filament\Ban\Actions;
 
 use Cog\Contracts\Ban\Bannable;
-use Filament\Actions\BulkAction;
+use Filament\Tables\Actions\BulkAction;
 use Illuminate\Database\Eloquent\Collection;
 
 class BanBulkAction extends BulkAction
