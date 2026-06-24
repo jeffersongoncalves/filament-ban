@@ -1,13 +1,13 @@
 <div class="filament-ban">
 
-![Filament Ban](https://raw.githubusercontent.com/jeffersongoncalves/filament-ban/3.x/art/jeffersongoncalves-filament-ban.png)
+![Filament Ban](https://raw.githubusercontent.com/jeffersongoncalves/filament-ban/2.x/art/jeffersongoncalves-filament-ban.png)
 
 </div>
 
 # Filament Ban
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/filament-ban.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-ban)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-ban/fix-php-code-style-issues.yml?branch=3.x&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-ban/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3A3.x)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-ban/fix-php-code-style-issues.yml?branch=3.x&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-ban/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3A2.x)
 [![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/filament-ban.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-ban)
 [![License](https://img.shields.io/packagist/l/jeffersongoncalves/filament-ban.svg?style=flat-square)](LICENSE.md)
 
