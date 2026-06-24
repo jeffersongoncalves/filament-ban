@@ -1,0 +1,118 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0A0B"/>
+      <stop offset="1" stop-color="#18181B"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FBBF24"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop stop-color="#FBBF24" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#FBBF24" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#27272A" stroke-width="0.6"/>
+    </pattern>
+    <style>
+      .h1 { font-family: Inter, system-ui, sans-serif; font-weight: 800; letter-spacing: -2px; fill: #FAFAFA; }
+      .tag { font-family: Inter, system-ui, sans-serif; font-weight: 600; fill: #FBBF24; }
+      .desc { font-family: Inter, system-ui, sans-serif; font-weight: 400; fill: #A1A1AA; }
+      .lbl { font-family: Inter, system-ui, sans-serif; font-weight: 500; letter-spacing: 2px; fill: #A1A1AA; }
+      .pill { font-family: Inter, system-ui, sans-serif; font-weight: 500; }
+      .usr { font-family: Inter, system-ui, sans-serif; font-weight: 500; fill: #52525B; }
+      .mono { font-family: ui-monospace, monospace; }
+    </style>
+  </defs>
+
+  <!-- backgrounds -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.4"/>
+  <ellipse cx="960" cy="310" rx="410" ry="290" fill="url(#glow)"/>
+
+  <!-- top label -->
+  <circle cx="82" cy="66" r="4" fill="#FBBF24"/>
+  <text x="100" y="71" class="lbl" font-size="14">FILAMENT PLUGIN</text>
+
+  <!-- title -->
+  <text x="80" y="270" class="h1" font-size="66">Filament Ban</text>
+
+  <!-- tagline -->
+  <text x="80" y="320" class="tag" font-size="22">Ban &amp; unban any Eloquent model</text>
+
+  <!-- description -->
+  <text x="80" y="364" class="desc" font-size="18">Ready-to-use actions, bulk actions, an icon column</text>
+  <text x="80" y="390" class="desc" font-size="18">and a status filter. Powered by cybercog/laravel-ban.</text>
+
+  <!-- right visual: users table mock -->
+  <g>
+    <!-- panel -->
+    <rect x="700" y="150" width="420" height="300" rx="16" fill="#18181B" stroke="#27272A" stroke-width="1.5"/>
+
+    <!-- panel header -->
+    <text x="724" y="188" class="lbl" font-size="13" fill="#71717A">USERS</text>
+    <rect x="1042" y="170" width="54" height="26" rx="13" fill="#0A0A0B" stroke="#3F3F46"/>
+    <circle cx="1058" cy="183" r="3" fill="#10B981"/>
+    <text x="1068" y="187" class="pill" font-size="11" fill="#A1A1AA">3</text>
+    <line x1="700" y1="206" x2="1120" y2="206" stroke="#27272A"/>
+
+    <!-- row 1: active -->
+    <circle cx="730" cy="240" r="14" fill="#27272A"/>
+    <text x="730" y="245" class="pill" font-size="12" fill="#A1A1AA" text-anchor="middle">A</text>
+    <rect x="756" y="231" width="120" height="9" rx="4.5" fill="#3F3F46"/>
+    <rect x="756" y="246" width="80" height="7" rx="3.5" fill="#27272A"/>
+    <rect x="980" y="228" width="92" height="26" rx="13" fill="#10B98122" stroke="#10B98155"/>
+    <path d="M992 241l4 4 7-8" stroke="#10B981" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="1008" y="245" class="pill" font-size="11" fill="#10B981">ACTIVE</text>
+
+    <!-- row 2: BANNED (highlighted) -->
+    <rect x="708" y="276" width="404" height="44" rx="10" fill="#FBBF240D" stroke="#F59E0B" stroke-width="1.5"/>
+    <circle cx="730" cy="298" r="14" fill="#27272A"/>
+    <text x="730" y="303" class="pill" font-size="12" fill="#A1A1AA" text-anchor="middle">B</text>
+    <rect x="756" y="289" width="120" height="9" rx="4.5" fill="#52525B"/>
+    <rect x="756" y="304" width="80" height="7" rx="3.5" fill="#27272A"/>
+    <!-- no-symbol ban icon -->
+    <circle cx="994" cy="298" r="9" fill="none" stroke="#EF4444" stroke-width="2"/>
+    <line x1="987.5" y1="291.5" x2="1000.5" y2="304.5" stroke="#EF4444" stroke-width="2"/>
+    <rect x="1012" y="286" width="80" height="26" rx="13" fill="#EF444422" stroke="#EF444455"/>
+    <text x="1024" y="303" class="pill" font-size="11" fill="#EF4444">BANNED</text>
+
+    <!-- row 3: active -->
+    <circle cx="730" cy="356" r="14" fill="#27272A"/>
+    <text x="730" y="361" class="pill" font-size="12" fill="#A1A1AA" text-anchor="middle">C</text>
+    <rect x="756" y="347" width="120" height="9" rx="4.5" fill="#3F3F46"/>
+    <rect x="756" y="362" width="80" height="7" rx="3.5" fill="#27272A"/>
+    <rect x="980" y="344" width="92" height="26" rx="13" fill="#10B98122" stroke="#10B98155"/>
+    <path d="M992 357l4 4 7-8" stroke="#10B981" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="1008" y="361" class="pill" font-size="11" fill="#10B981">ACTIVE</text>
+
+    <!-- footer action bar -->
+    <line x1="700" y1="392" x2="1120" y2="392" stroke="#27272A"/>
+    <rect x="724" y="408" width="96" height="30" rx="8" fill="url(#amber)"/>
+    <circle cx="744" cy="423" r="6" fill="none" stroke="#0A0A0B" stroke-width="1.6"/>
+    <line x1="739.5" y1="418.5" x2="748.5" y2="427.5" stroke="#0A0A0B" stroke-width="1.6"/>
+    <text x="756" y="427" class="pill" font-size="12" fill="#0A0A0B" font-weight="700">Ban</text>
+    <rect x="832" y="408" width="104" height="30" rx="8" fill="#0A0A0B" stroke="#3F3F46"/>
+    <path d="M850 423l3 3 6-7" stroke="#10B981" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="866" y="427" class="pill" font-size="12" fill="#A1A1AA">Unban</text>
+  </g>
+
+  <!-- footer pills -->
+  <g class="pill" font-size="14">
+    <rect x="80" y="545" width="86" height="30" rx="15" fill="#18181B" stroke="#27272A"/>
+    <text x="123" y="565" fill="#A1A1AA" text-anchor="middle">PHP 8.2</text>
+
+    <rect x="178" y="545" width="104" height="30" rx="15" fill="#18181B" stroke="#27272A"/>
+    <text x="230" y="565" fill="#A1A1AA" text-anchor="middle">Laravel 13</text>
+
+    <rect x="294" y="545" width="116" height="30" rx="15" fill="#18181B" stroke="#FBBF24"/>
+    <text x="352" y="565" fill="#FBBF24" text-anchor="middle">Filament v5</text>
+
+    <rect x="422" y="545" width="58" height="30" rx="15" fill="#18181B" stroke="#27272A"/>
+    <text x="451" y="565" fill="#A1A1AA" text-anchor="middle">MIT</text>
+  </g>
+
+  <!-- username -->
+  <text x="1120" y="595" class="usr" font-size="13" text-anchor="end">@jeffersongoncalves</text>
+</svg>
