@@ -6,6 +6,7 @@ use Cog\Contracts\Ban\Bannable;
 use Filament\Actions\Action;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Textarea;
+use Filament\Support\Icons\Heroicon;
 use Illuminate\Database\Eloquent\Model;
 
 class BanAction extends Action
@@ -19,17 +20,17 @@ class BanAction extends Action
     {
         parent::setUp();
 
-        $this->label('Ban')
-            ->icon('heroicon-o-no-symbol')
+        $this->label(__('filament-ban::default.ban.label'))
+            ->icon(Heroicon::OutlinedNoSymbol)
             ->color('danger')
             ->requiresConfirmation()
             ->schema([
                 Textarea::make('comment')
-                    ->label('Comment')
+                    ->label(__('filament-ban::default.ban.comment'))
                     ->nullable(),
                 DateTimePicker::make('expired_at')
-                    ->label('Expires at')
-                    ->helperText('Leave empty for a permanent ban.')
+                    ->label(__('filament-ban::default.ban.expired_at'))
+                    ->helperText(__('filament-ban::default.ban.expired_at_helper'))
                     ->seconds(false)
                     ->nullable(),
             ])
@@ -44,6 +45,6 @@ class BanAction extends Action
                     'expired_at' => $data['expired_at'] ?? null,
                 ]);
             })
-            ->successNotificationTitle('Banned');
+            ->successNotificationTitle(__('filament-ban::default.ban.success'));
     }
 }
