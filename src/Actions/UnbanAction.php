@@ -17,7 +17,7 @@ class UnbanAction extends Action
     {
         parent::setUp();
 
-        $this->label('Unban')
+        $this->label(__('filament-ban::default.unban.label'))
             ->icon('heroicon-o-check-circle')
             ->color('success')
             ->requiresConfirmation()
@@ -29,6 +29,6 @@ class UnbanAction extends Action
 
                 $record->unban();
             })
-            ->successNotificationTitle('Unbanned');
+            ->successNotificationTitle(__('filament-ban::default.unban.success'));
     }
 }

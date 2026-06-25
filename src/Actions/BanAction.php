@@ -19,17 +19,17 @@ class BanAction extends Action
     {
         parent::setUp();
 
-        $this->label('Ban')
+        $this->label(__('filament-ban::default.ban.label'))
             ->icon('heroicon-o-no-symbol')
             ->color('danger')
             ->requiresConfirmation()
             ->form([
                 Textarea::make('comment')
-                    ->label('Comment')
+                    ->label(__('filament-ban::default.ban.comment'))
                     ->nullable(),
                 DateTimePicker::make('expired_at')
-                    ->label('Expires at')
-                    ->helperText('Leave empty for a permanent ban.')
+                    ->label(__('filament-ban::default.ban.expired_at'))
+                    ->helperText(__('filament-ban::default.ban.expired_at_helper'))
                     ->seconds(false)
                     ->nullable(),
             ])
@@ -44,6 +44,6 @@ class BanAction extends Action
                     'expired_at' => $data['expired_at'] ?? null,
                 ]);
             })
-            ->successNotificationTitle('Banned');
+            ->successNotificationTitle(__('filament-ban::default.ban.success'));
     }
 }

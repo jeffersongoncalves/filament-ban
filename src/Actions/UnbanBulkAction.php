@@ -17,7 +17,7 @@ class UnbanBulkAction extends BulkAction
     {
         parent::setUp();
 
-        $this->label('Unban selected')
+        $this->label(__('filament-ban::default.unban.bulk_label'))
             ->icon('heroicon-o-check-circle')
             ->color('success')
             ->requiresConfirmation()
@@ -29,6 +29,6 @@ class UnbanBulkAction extends BulkAction
                 });
             })
             ->deselectRecordsAfterCompletion()
-            ->successNotificationTitle('Unbanned');
+            ->successNotificationTitle(__('filament-ban::default.unban.success'));
     }
 }

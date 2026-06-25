@@ -17,7 +17,7 @@ class BanBulkAction extends BulkAction
     {
         parent::setUp();
 
-        $this->label('Ban selected')
+        $this->label(__('filament-ban::default.ban.bulk_label'))
             ->icon('heroicon-o-no-symbol')
             ->color('danger')
             ->requiresConfirmation()
@@ -29,6 +29,6 @@ class BanBulkAction extends BulkAction
                 });
             })
             ->deselectRecordsAfterCompletion()
-            ->successNotificationTitle('Banned');
+            ->successNotificationTitle(__('filament-ban::default.ban.success'));
     }
 }

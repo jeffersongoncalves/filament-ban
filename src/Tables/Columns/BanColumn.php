@@ -17,7 +17,7 @@ class BanColumn extends IconColumn
     {
         parent::setUp();
 
-        $this->label('Banned')
+        $this->label(__('filament-ban::default.column.label'))
             ->state(fn (?Model $record): bool => $record instanceof Bannable && $record->isBanned())
             ->boolean()
             ->trueIcon('heroicon-o-no-symbol')
