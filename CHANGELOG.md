@@ -2,6 +2,10 @@
 
 All notable changes to `filament-ban` will be documented in this file.
 
+## 1.0.1 - 2026-06-25
+
+Add en/pt_BR translations (Filament v3).
+
 ## 1.0.0 - 2026-06-24
 
 Initial release for Filament v3.
