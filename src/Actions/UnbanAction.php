@@ -4,6 +4,7 @@ namespace JeffersonGoncalves\Filament\Ban\Actions;
 
 use Cog\Contracts\Ban\Bannable;
 use Filament\Actions\Action;
+use Filament\Support\Icons\Heroicon;
 use Illuminate\Database\Eloquent\Model;
 
 class UnbanAction extends Action
@@ -17,8 +18,8 @@ class UnbanAction extends Action
     {
         parent::setUp();
 
-        $this->label('Unban')
-            ->icon('heroicon-o-check-circle')
+        $this->label(__('filament-ban::default.unban.label'))
+            ->icon(Heroicon::OutlinedCheckCircle)
             ->color('success')
             ->requiresConfirmation()
             ->visible(fn (?Model $record): bool => $record instanceof Bannable && $record->isBanned())
@@ -29,6 +30,6 @@ class UnbanAction extends Action
 
                 $record->unban();
             })
-            ->successNotificationTitle('Unbanned');
+            ->successNotificationTitle(__('filament-ban::default.unban.success'));
     }
 }

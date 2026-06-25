@@ -4,6 +4,7 @@ namespace JeffersonGoncalves\Filament\Ban\Actions;
 
 use Cog\Contracts\Ban\Bannable;
 use Filament\Actions\BulkAction;
+use Filament\Support\Icons\Heroicon;
 use Illuminate\Database\Eloquent\Collection;
 
 class UnbanBulkAction extends BulkAction
@@ -17,8 +18,8 @@ class UnbanBulkAction extends BulkAction
     {
         parent::setUp();
 
-        $this->label('Unban selected')
-            ->icon('heroicon-o-check-circle')
+        $this->label(__('filament-ban::default.unban.bulk_label'))
+            ->icon(Heroicon::OutlinedCheckCircle)
             ->color('success')
             ->requiresConfirmation()
             ->action(function (Collection $records): void {
@@ -29,6 +30,6 @@ class UnbanBulkAction extends BulkAction
                 });
             })
             ->deselectRecordsAfterCompletion()
-            ->successNotificationTitle('Unbanned');
+            ->successNotificationTitle(__('filament-ban::default.unban.success'));
     }
 }

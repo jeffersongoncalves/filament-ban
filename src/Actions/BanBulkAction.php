@@ -4,6 +4,7 @@ namespace JeffersonGoncalves\Filament\Ban\Actions;
 
 use Cog\Contracts\Ban\Bannable;
 use Filament\Actions\BulkAction;
+use Filament\Support\Icons\Heroicon;
 use Illuminate\Database\Eloquent\Collection;
 
 class BanBulkAction extends BulkAction
@@ -17,8 +18,8 @@ class BanBulkAction extends BulkAction
     {
         parent::setUp();
 
-        $this->label('Ban selected')
-            ->icon('heroicon-o-no-symbol')
+        $this->label(__('filament-ban::default.ban.bulk_label'))
+            ->icon(Heroicon::OutlinedNoSymbol)
             ->color('danger')
             ->requiresConfirmation()
             ->action(function (Collection $records): void {
@@ -29,6 +30,6 @@ class BanBulkAction extends BulkAction
                 });
             })
             ->deselectRecordsAfterCompletion()
-            ->successNotificationTitle('Banned');
+            ->successNotificationTitle(__('filament-ban::default.ban.success'));
     }
 }

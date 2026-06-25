@@ -9,6 +9,7 @@ class BanServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
-        $package->name('filament-ban');
+        $package->name('filament-ban')
+            ->hasTranslations();
     }
 }
