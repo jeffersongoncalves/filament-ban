@@ -2,6 +2,10 @@
 
 All notable changes to `filament-ban` will be documented in this file.
 
+## 1.0.2 - 2026-09-12
+
+fix: correct filament-hidden class name in README
+
 ## 1.0.1 - 2026-06-25
 
 Add en/pt_BR translations (Filament v3).
