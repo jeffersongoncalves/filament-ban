@@ -2,6 +2,10 @@
 
 All notable changes to `filament-ban` will be documented in this file.
 
+## 2.0.3 - 2026-09-12
+
+Add dependabot cooldown period (4 days) before dependency updates are proposed.
+
 ## 2.0.2 - 2026-09-12
 
 fix: correct filament-hidden class name in README
