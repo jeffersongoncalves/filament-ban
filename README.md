@@ -1,4 +1,4 @@
-<div class="filament-ban">
+<div class="filament-hidden">
 
 ![Filament Ban](https://raw.githubusercontent.com/jeffersongoncalves/filament-ban/1.x/art/jeffersongoncalves-filament-ban.png)
 
